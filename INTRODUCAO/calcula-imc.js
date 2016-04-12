@@ -2,12 +2,14 @@
 //peso /altura * altura
 
 var peso = 100;
-var altura = 1.80;
+var altura = 0;
 
-var ehDiferenteDeZero = (altura != 0);
 
-if (ehDiferenteDeZero) {
+
+if (altura != 0) {
   var imc = peso / (altura * altura);
 
   console.log(imc);
+}else{
+  console.log("Informe altura!");
 }
