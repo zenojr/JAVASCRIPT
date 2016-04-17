@@ -31,7 +31,7 @@ for (var posicaoAtual = 0; posicaoAtual <= trPacientes.length -1 ; posicaoAtual+
 	var tdPeso = pacienteTr.getElementsByClassName("info-peso")[0];
 	var tdAltura = pacienteTr.getElementsByClassName("info-altura")[0];
 
-	var paciente = {nome:tdNome.textContent, peso:tdPeso.textContent, altura:tdAltura.textContent};
+	var paciente = {nome:tdNome.textContent, peso:tdPeso.textContent, altura:tdAltura.textContent}; //constroi o objeto
 
 	if (paciente.altura != 0) {
 	    var imc = paciente.peso / (paciente.altura * paciente.altura);
@@ -44,6 +44,6 @@ for (var posicaoAtual = 0; posicaoAtual <= trPacientes.length -1 ; posicaoAtual+
 	} else {
 	  console.log("informe altura");
 	}
-	posicaoAtual++;
+	
 
 };//endFor
