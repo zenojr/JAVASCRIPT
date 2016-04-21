@@ -1,12 +1,12 @@
 
+
+
+
 var trPacientes = document.getElementsByClassName("paciente"); //array que pega as trs 
 
 
-for (var posicaoAtual = 0; posicaoAtual <= trPacientes.length -1 ; posicaoAtual++) {
-	
-
-	
-	var pacienteTr = trPacientes[posicaoAtual]; //array class paciente
+percorreArray(trPacientes, function (pacienteTr) {
+	 
 	
 	//pega elementos dentro do array pacienteTr com variavle de controle
 	var tdNome = pacienteTr.getElementsByClassName("info-nome")[0];
@@ -18,7 +18,7 @@ for (var posicaoAtual = 0; posicaoAtual <= trPacientes.length -1 ; posicaoAtual+
 						altura:tdAltura.textContent,
 						pegaImc: function () { //função anonima
 							if (this.altura != 0) {
-	    						var imc = this.peso / (this.altura * this.altura);
+	    						var imc = this.peso / (this.altura * this.altura); //this usado para pegar o parametro da função já declarada
 	    						return imc;
 
 							} else {
@@ -35,6 +35,9 @@ for (var posicaoAtual = 0; posicaoAtual <= trPacientes.length -1 ; posicaoAtual+
 	var tdImc = pacienteTr.getElementsByClassName("info-imc")[0];
 	tdImc.textContent = imc; 
 	console.log(imc);
+});
+
+	
+	
 
 
-};//endFor
