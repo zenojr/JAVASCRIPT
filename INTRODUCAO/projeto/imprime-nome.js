@@ -1,6 +1,6 @@
 var trPacientes = document.getElementsByClassName("paciente"); //array que pega as trs 
 
-percorreArray(trPacientes,function imprimeNome(pacienteTr){
+percorreArray(trPacientes,function (pacienteTr){
 				//pega elementos dentro do array pacienteTr com variavle de controle
 				var tdNome = pacienteTr.getElementsByClassName("info-nome")[0];
 				var tdPeso = pacienteTr.getElementsByClassName("info-peso")[0];
