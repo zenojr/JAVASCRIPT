@@ -5,3 +5,7 @@ function percorreArray(trsPacientes, comportamento) {
 	 	comportamento(pacienteTrAtual);
 	 }
 }
+
+
+
+
