@@ -1,2 +1,1 @@
-
-console.log("ola zeno!");
+document.write("Este é meu segundo programa");
