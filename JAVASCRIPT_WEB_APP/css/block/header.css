@@ -3,34 +3,33 @@
 	height: 40px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	margin-bottom: 40px;
+	
 }
 
 .topo-title{
+	color: #B3DAEE;
 	display:inline;
-	vertical-align: center;
+	vertical-align: middle;
 }
 
-.topo-title h1{ 
-	color: #B3DAEE;
-}
 
 .topo-menu{
 	float:right;
 }
 
 .topo-button:first-child{
-	margin-left: 15px;
+	margin-right: 15px;
 }
 
 .topo-button{
 	background-color: #006195;
 	font-size: 16px;
-	color: #ffffff;
-	box-sizing: border-box;
+	color: #fff;
+	box-sizing: content-box;
 	height: 22px;
 	margin: 8px;
-	display: inline;
+	display: inline-block;
+	padding:4px
 } 
 
 

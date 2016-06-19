@@ -12,3 +12,7 @@ a{
 	color: inherit;
 }
 
+
+ul, ol, li{
+	list-style: none;
+}
