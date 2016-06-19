@@ -1,0 +1,14 @@
+*{
+	margin: 0px;
+	border: none;	
+}
+
+body{
+	font-family: "Verdana" , sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
