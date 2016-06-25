@@ -16,7 +16,7 @@
 }
 
 
-.card-colors.isActive{
+.card-options.isActive{
 	border-width:4px;
 }
 
@@ -30,7 +30,7 @@
 }
 
 
-.card-colors{
+.card-options{
 	text-indent: -999;
 	border-radius: 50%;
 	display:inline-block;
@@ -42,12 +42,20 @@
 
 }
 
+.card-delete{
+	background-image: url('../imagens/delete.svg');
+	background-size: 70%;
+	background-color: #FFF;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 
 .card-colors{
 	display: inline-block;
 }
 
-.wrap-card-colors{
+.wrap-card-options{
 	position: absolute;
 	top: -16px;
 	left: 0;
