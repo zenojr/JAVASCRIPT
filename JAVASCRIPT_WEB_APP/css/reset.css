@@ -1,13 +1,11 @@
-*{
+* {
 	margin: 0;
 	border: none;
 	padding: 0;
 }
 
-
 body{
 	font-family: 'Verdana', sans-serif;
-	
 }
 
 a{
@@ -15,6 +13,6 @@ a{
 	color: inherit;
 }
 
-ul,ol,li{
-	list-style:none;
+ul, ol, li{
+	list-style: none;
 }

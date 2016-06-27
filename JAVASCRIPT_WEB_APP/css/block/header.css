@@ -1,39 +1,30 @@
-.header{
+.header	{
 	background-color: #0082C7;
 	height: 40px;
-	padding-bottom: 8px;
 	padding-top: 8px;
-	margin-bottom: 40px;
+	padding-bottom: 8px;
 }
 
-.header-title{
+.header-title	{
 	color: #B3DAEE;
 	display: inline;
 	vertical-align: middle;
 }
 
-.header-menu{
+.header-menu	{
 	float: right;
 }
 
-.header-button:first-child{
+.header-button:first-child	{
 	margin-right: 15px;
 }
 
-.header-button{
+.header-button	{	
 	background-color: #006195;
 	font-size: 16px;
 	color: #FFF;
 	box-sizing: content-box;
-	display: inline-block;
 	height: 22px;
-	padding: 8px;
+	margin: 8px;
+	display: inline-block;
 }
-
-
-
-
-
-
-
-

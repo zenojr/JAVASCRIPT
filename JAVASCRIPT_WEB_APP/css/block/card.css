@@ -1,0 +1,73 @@
+.card	{
+	
+	display: inline-block;
+	box-sizing: content-box;
+	padding: 16px;
+	width: 25%;
+	position: relative;
+	margin-top: 40px;
+}
+
+.card-colors	{
+	width: 32px;
+	height: 32px;
+	
+	text-indent: -999px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: solid 2px rgba(0, 0, 0, 0.5);
+	display: inline-block;
+
+}
+
+.wrap-card-colors{
+	position: absolute;
+	top: -16px;
+}
+
+.card_colorFirst	{
+	background-color: #45AAEE;
+}
+
+.card_colorSecond	{
+	background-color: #FF1010;
+}
+
+.card_colorThird	{
+	background-color: #76EF40;
+}
+
+.card_colorFourth	{
+	background-color: #EBEF40;
+}
+
+.card-colors_colorFirst{
+	
+}
+.card-colors_colorSecond{
+	
+}
+.card-colors_colorThird{
+	
+}
+.card-colors_colorFourth{
+	
+}
+
+[data-color="first"]{
+	background-color:#45AAEE;
+}
+
+[data-color="second"]{
+	background-color:#FF1010;
+}
+
+[data-color="third"]{
+	background-color:#76EF40;
+}
+
+[data-color="fourth"]{
+	background-color:#EBEF40;
+}
+
+
