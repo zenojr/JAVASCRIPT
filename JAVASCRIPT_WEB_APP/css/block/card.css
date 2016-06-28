@@ -6,29 +6,33 @@
 	width: 25%;
 	position: relative;
 	margin-top: 40px;
+
 }
+
 
 .card-options	{
 	width: 32px;
 	height: 32px;
-	
 	text-indent: -999px;
 	overflow: hidden;
 	border-radius: 50%;
 	border: solid 2px rgba(0, 0, 0, 0.5);
 	display: inline-block;
 	box-sizing: border-box;
-
+	
 }
 
-.card-colors.isActive {
+.card-options.isActive {
 	border: 4px solid rgba(0, 0, 0, 0.5);
 }
+
 
 .wrap-card-colors{
 	position: absolute;
 	top: -16px;
 }
+
+
 
 .card_colorFirst	{
 	background-color: #45AAEE;

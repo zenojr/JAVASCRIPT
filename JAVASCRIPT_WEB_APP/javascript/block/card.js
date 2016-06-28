@@ -19,3 +19,4 @@ for(var index = 0; index < $cards.length; index++){
 
 
 
+ 
