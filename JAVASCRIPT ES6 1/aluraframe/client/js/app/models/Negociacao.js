@@ -1,25 +1,27 @@
 class Negociacao { //criando classe em JS6
 	constructor (data, quantidade, valor){ //método construtor da classe
 							//por convenção utiliza-se o _ antes de um atributo ou propriedade para sinalizar que este não pode ser alterado ex: _data
-		this._data =  data; 
+		this._data =  data;
 		this._quantidade = quantidade;
 		this._valor = valor;
 
+		Object.freeze(this); //congela o objeto contra alterações após instanciado para evitar falhas de segurança;
+
 	}
 
-	obtemVolume(){ // function inside of class is called method!!!
+	get volume(){ // function inside of class is called method!!!
 		return this._quantidade * this._valor;
 	}
 
-	getData(){ // Metodo de acesso ao atributo ou propriedade
+	get data(){ // Metodo de acesso ao atributo ou propriedade
 		return this._data;
 	}
 
-	getQuantidade(){
+	get quantidade(){
 		return this._quantidade;
 	}
 
-	getValor(){
+	get valor(){
 		return this._valor;
 	}
 
