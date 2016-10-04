@@ -59,19 +59,14 @@
         <tfoot>
         </tfoot>
     </table>
-<script src="js/app/models/Negociacao.js"></script>
+<script src="js/app/models/NegociacaoExemplo.js"></script>
 <script>
+  var n1 = new Negociacao(new Date(), 1, 100.00);
+  console.log(n1.obtemVolume());
 
-     var n1 = new Negociacao(new Date(), 2, 150.00);
-
-     console.log(n1.data);
-     var amanha = new Date();
-     amanha.setDate(4);
-
-     n1._data = amanha;
-
-     console.log(n1.data);
-
+  var n2 = new Negociacao(new Date(), 2, 120.00);
+  n2.quantidade = 5;
+  console.log(n2.obtemVolume());
 
 
 

@@ -1,7 +1,7 @@
 class Negociacao { //criando classe em JS6
 	constructor (data, quantidade, valor){ //método construtor da classe
 							//por convenção utiliza-se o _ antes de um atributo ou propriedade para sinalizar que este não pode ser alterado ex: _data
-		this._data =  data;
+		this._data =  new Date(data.getTime());
 		this._quantidade = quantidade;
 		this._valor = valor;
 
@@ -14,7 +14,7 @@ class Negociacao { //criando classe em JS6
 	}
 
 	get data(){ // Metodo de acesso ao atributo ou propriedade
-		return this._data;
+		return new Date(this._data.getTime());
 	}
 
 	get quantidade(){
