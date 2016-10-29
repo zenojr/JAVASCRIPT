@@ -13,7 +13,7 @@
 
     <form class="form" onsubmit="negociacaoControler.adiciona(event)">
 
-        <div class="form-group">
+      <div class="form-group">
             <label for="data">Data</label>
             <input type="date" id="data" class="form-control" required autofocus/>
         </div>
@@ -61,14 +61,15 @@
     </table>
 
 
-<script type="text/javascript" src="js/app/models/NegociacaoSENAI.js"></script>
+<script type="text/javascript" src="js/app/models/Negociacao.js"></script>
 
 <script>
-var n1 = new Negociacao(new Date(), 1, 100.00);
+      let hoje = new Date();
+      let n1 = new Negociacao(hoje, 3, 150);
       console.log(n1.data);
-      console.log(n1.quantidade);
-      console.log(n1.valor);
-      console.log(n1.volume);
+      hoje.setDate(hoje.getDate() + 2);
+      console.log(n1.data);
+
 
 </script>
 

@@ -8,7 +8,7 @@ class NegociacaoControler {
       this._inputQuantidade = $('#quantidade');
       this._intputValor = $('#valor');
 
-      console.log(typeof(this._inputData));
+      console.log(typeof(this._inputData.value));
 
     }
     adiciona(event){
@@ -17,7 +17,7 @@ class NegociacaoControler {
 
       //let data = new Date(this._inputData.value.split('-')); //solução 1 para trocar o -  da data e reconhecer a virgula;
 
-      let data = new Date(this._inputData.input.value.replace(/-/g ','));//faz o replace utilizando o // como seletor global /g e faz um replace pela virgula;
+      let data = new Date(this._inputData.input.value.replace(/-/g, ','));//faz o replace utilizando o // como seletor global /g e faz um replace pela virgula;
       console.log(data);
 
 
