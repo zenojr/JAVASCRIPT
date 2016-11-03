@@ -1,12 +1,26 @@
 class NegociacaoControler {
-  adiciona(event){
-    event.preventDefault();
-    let inputData = document.querySelector('#data');
-    let inputQuantidade = document.querySelector('#quantidade');
-    let inputValor = document.querySelector('#valor');
 
-    console.log(inputData.value);
-    console.log(inputQuantidade.value);
-    console.log(inputValor.value);
+  constructor(){
+    let $ = document.querySelector.bind(document);
+
+     this._inputData = $('#data');
+     this._inputQuantidade = $('#quantidade');
+     this._inputValor = $('#valor');
+  }
+
+
+  adiciona(event){
+
+
+    event.preventDefault();
+
+    let negociacao = new Negociacao(
+      this._inputData.value,
+      this._inputQuantidade.value,
+      this._inputValor.value
+    );
+    console.log(Negociacao);
+    //adicionar uma lista
+
   }
 }

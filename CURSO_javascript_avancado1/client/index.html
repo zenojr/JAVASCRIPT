@@ -61,14 +61,11 @@
     </table>
 
 
-<script type="text/javascript" src="js/app/models/Negociacao.js"></script>
+<script  src="js/app/models/Negociacao.js"></script>
+<script  src="js/app/controllers/NegociacaoControler.js"></script>
 
 <script>
-      let hoje = new Date();
-      let n1 = new Negociacao(hoje, 3, 150);
-      console.log(n1.data);
-      hoje.setDate(hoje.getDate() + 2);
-      console.log(n1.data);
+      let negociacaoControler = new NegociacaoControler();
 
 
 </script>
